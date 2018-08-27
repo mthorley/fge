@@ -1,0 +1,26 @@
+{
+    "party": [
+        {"id": "GUID1", "brand": "retail", "name": "Dave"}
+    ],
+    "relatedparty": [
+        { "id": "GUID2", "name": "HR Block Chap", 
+            "assoc": [
+                { "role": "broker", "id": "GUID4" },
+                { "role": "broker", "id": "GUID1" }
+            ]
+        }
+    ],
+    "consent": [
+        { 
+            "for": "GUID1",
+            "scopes": ["Profile.ReadName","Profile.ReadAddress","Profile.ReadDOB"],
+            "between": {"from": "2018-09-15T15:53:00", "to": "2008-09-15T15:53:00"}
+        },
+        { 
+            "for": "GUID3",
+            "scopes": ["Profile.ReadName","Profile.ReadAddress","Profile.ReadDOB"],
+            "between": {"from": "2018-09-15T15:53:00", "to": "2008-09-15T15:53:00"}
+        }
+    ]
+}
+

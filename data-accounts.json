@@ -1,0 +1,13 @@
+{
+    "accounts": [
+        {"id": "202323:12345678", "product": "savings"},
+        {"id": "202323:98765432", "product": "transaction"}
+    ],
+    "relatedparty": [
+        {"id": "GUID1", "name": "HR Block Chaps", "role": "broker"}
+    ],
+    "consent": [
+        { "scopes": ["Account.TransationHistory","Account.Balance"] },
+        { "accounts": ["202323:12345678"] }
+    ]
+}
